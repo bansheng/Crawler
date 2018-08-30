@@ -1,17 +1,18 @@
-#__auther__: "丁亚东"
-#__date__  : 2018/5/7
+# auther: "丁亚东"
+# date  : 2018/5/7
+
 import urllib.request
 import re
 
-data={}
-data['word']='ppp'
+data = {}
+data['word'] = 'ppp'
 
-url_values=urllib.parse.urlencode(data)
-url="http://www.baidu.com/s?"
-full_url=url+url_values
+url_values = urllib.parse.urlencode(data)
+url = "http://www.baidu.com/s?"
+full_url = url + url_values
 
-data=urllib.request.urlopen(full_url).read()
-data=data.decode('UTF-8')
+data = urllib.request.urlopen(full_url).read()
+data = data.decode('UTF-8')
 # print(data)
 
 line = "Cats are smarter than dogs"
